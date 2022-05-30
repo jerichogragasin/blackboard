@@ -1,0 +1,143 @@
+/* Login Template */
+.mainDiv {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.mainInnerLoginContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    border-radius: 1rem;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.leftDiv {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 0 0 1rem;
+    background-color: var(--blue-bell);
+}
+
+.rightDiv {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Login Form */
+
+.loginContainer  {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;    
+    align-items: center;
+    justify-content: center;
+}
+
+.loginFormContainer {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    border-radius: 1rem;
+    font-size: 1rem;
+    justify-content: space-evenly;
+}
+
+.loginBanner {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cornflower-blue);
+    text-align: center;
+}
+
+.loginForm  {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+    font-family: 'Poppins', sans-serif;
+    flex-shrink: 1;
+}
+
+.loginFormFields {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    border-radius: 1rem;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.288);
+    padding-left: 1rem;
+}
+
+
+
+.loginFormLabels {
+    font-size: 1.2rem;
+}
+
+.loginButton {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    width: 300px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.googleButton {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    overflow: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue-bell);
+    color: white;
+    border-radius: 1rem;
+    outline: hidden;
+    border: none;
+    width: 300px;
+    height: 50px;
+    padding: 1rem 2rem;
+}
+
+.googleButton:active , .loginButton:active, .googlebutton:focus , .loginbutton:focus {
+    background-color: var(--cornflower-blue);
+    color: black;
+}
